@@ -39,12 +39,12 @@ word = word.split()
 For loop is now used through each index of the words from the list, before converting each word into lowercase to match the keys in the dictionary.
 ```python
 for i in range(len(word)):
-        lw = word[i].lower()
+        small_letters = word[i].lower()
 ```
 Using the if statement, the program checks if the word matches one of the values from the dictionary before it joins back into the original sentence.
 ```python
-        if lw in emoji:
-            word[i] = emoji[lw]
+        if small_letters in emoji:
+            word[i] = emoji[small_letters]
 return " ".join(word)
 ```
 ### Example:
